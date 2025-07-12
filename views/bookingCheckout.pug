@@ -1,0 +1,42 @@
+extends base
+
+block content
+  .section-booking-checkout
+    .container
+      .checkout-grid
+        .checkout-summary
+          h2#tourName
+          h1#tourPrice
+          p#tourSummary
+          img#tourImage(style='width:100%;border-radius:8px;margin-top:1rem;')
+        .checkout-form
+          h3 Pay with card
+          form#mock-payment-form
+            label(for='email') Email
+            input(type='email', id='email', readonly)
+            label(for='card') Card information
+            input(type='text', id='card', placeholder='1234 1234 1234 1234', style='margin-bottom:0.5rem;')
+            .form-row
+              input(type='text', id='exp', placeholder='MM / YY', style='width:48%;display:inline-block;margin-right:4%')
+              input(type='text', id='cvc', placeholder='CVC', style='width:48%;display:inline-block;')
+            label(for='name') Name on card
+            input(type='text', id='name', readonly)
+            label(for='country') Country or region
+            input(type='text', id='country', value='India', readonly)
+            button.btn.btn--green(type='button', id='pay-btn', style='margin-top:1rem;width:100%;font-size:1.2rem;') Pay
+          a.btn.btn--black(href='/my-tours', id="see-bookings") See my bookings
+
+  style.
+    .checkout-grid { display: flex; gap: 2rem; }
+    .checkout-summary { flex: 1; background: #fff; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px #0001; }
+    .checkout-form { flex: 1; background: #fafafa; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px #0001; }
+    .badge { background: #ffe066; color: #333; font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 4px; margin-left: 1rem; }
+    .btn--black { background: #222;color: #fff;width:100%; padding: 0.8rem 1.2rem; border-radius: 4px; display:block; transition: background 0.2s;margin-top:2rem; }
+    .form-row { margin-bottom: 0.5rem; }
+    #mock-payment-form input { margin-bottom: 0.5rem; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; width: 100%; font-size: 1rem; }
+    #pay-btn { background: #28b485;color: #fff; border: none; cursor: pointer; transition: background 0.2s; }
+    #pay-btn:hover { background: #239a6e; }
+    #see-bookings { background: #222;color: #fff; border: none;display:block; width:100%;display:flex;justify-content:center; cursor: pointer; transition: background 0.2s; }
+    #see-bookings:hover { background: #232222; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
