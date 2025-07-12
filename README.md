@@ -1,6 +1,6 @@
 # Mytours api- Node.js, Express & MongoDB Tour Booking App
 
-Natours is a full-featured tour booking web application built with Node.js, Express, MongoDB, and Pug. It demonstrates modern web development practices, including authentication, authorization, RESTful APIs, file uploads, and more.
+mytours is a full-featured tour booking web application with api built with Node.js, Express, MongoDB, and Pug. It demonstrates modern web development practices, including authentication, authorization, RESTful APIs, file uploads, and more.
 
 # Try it your self : [link](https://mytours-xuec.onrender.com)
 
@@ -25,17 +25,11 @@ Natours is a full-featured tour booking web application built with Node.js, Expr
 -   MongoDB database (local or Atlas)
 
 ### Installation
-
-1. Clone the repository:
-    ```sh
-    git clone <your-repo-url>
-    cd complete-node-bootcamp-master/4-natours/starter
-    ```
-2. Install dependencies:
+Install dependencies:
     ```sh
     npm install
     ```
-3. Create a `.env` file (or edit `config.env`) with your environment variables:
+Create a `.env` file (or edit `config.env`) with your environment variables:
     ```env
     DATABASE=<your-mongodb-connection-string>
     DATABASE_PASSWORD=<your-db-password>
@@ -74,7 +68,6 @@ Natours is a full-featured tour booking web application built with Node.js, Expr
 -   `public/` - Static assets (JS, CSS, images)
 -   `views/` - Pug templates
 -   `utils/` - Utility modules
--   `dev-data/` - Sample data
 
 ## API Endpoints
 
@@ -93,14 +86,5 @@ Natours is a full-featured tour booking web application built with Node.js, Expr
 -   `/bookingCheckout` - Booking checkout
 -   `/my-tours` - User's booked tours
 
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-ISC
-
----
 
 Made by Rahul Chavda (GEC Bhavnagar)
