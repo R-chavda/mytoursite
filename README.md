@@ -1,4 +1,4 @@
-# mytours - Node.js, Express & MongoDB Tour Booking App
+# Mytours api - Node.js, Express & MongoDB Tour Booking App
 
 mytours is a personal portfolio project by Rahul Chavda (GEC Bhavnagar), showcasing a full-featured tour booking web application built with Node.js, Express, MongoDB, and Pug. It demonstrates modern web development practices, including authentication, authorization, RESTful APIs, file uploads, and more.
 
@@ -17,7 +17,7 @@ mytours is a personal portfolio project by Rahul Chavda (GEC Bhavnagar), showcas
 
 ## Live Demo
 
-[Deployed Project Link - https://mytours-xuec.onrender.com)]
+[(Deployed Project Link - https://mytours-xuec.onrender.com)]
 
 ## Getting Started
 
