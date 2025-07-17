@@ -1429,6 +1429,12 @@ body {
   flex-direction: row;
 }
 
+.section-header {
+    position: relative;
+    height: 50vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%);
+}
+
 .nav {
   display: flex;
   flex-direction: row
@@ -1586,8 +1592,8 @@ body {
 .cta__content {
   display: grid;
   grid-template-columns: [first] 100% [line2] 0%;
-  grid-template-rows: 100% auto;
-  grid-gap: 0rem;
+  grid-template-rows: 100% 0%;
+  grid-gap: 4rem;
 }
 .cta__content .heading-secondary{
   padding-left: 30%;
