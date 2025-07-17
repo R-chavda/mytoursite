@@ -1452,7 +1452,7 @@ body {
   justify-content: space-between;
 }
 .nav__el:not(:last-child) {
-        margin-right: 0;
+        margin-bottom: 0;
 }
 .header__logo img {
   height: 1.75rem;
@@ -1554,10 +1554,10 @@ body {
 
   
 .section-cta {
-  margin-top: calc(0px - var(--section-rotate));
-  padding: 3rem;
-  padding-bottom: 11rem;
-  padding-top: calc(15rem + var(--section-rotate));
+  margin-top: calc(-20pxpx - var(--section-rotate));
+  padding: 1rem;
+  padding-bottom: 3rem;
+  padding-top: calc(4rem + var(--section-rotate));
   background-color: #f7f7f7;
 }
 
@@ -1585,8 +1585,9 @@ body {
 
 .cta__content {
   display: grid;
-  grid-template-columns: [first] 100% [line2] 50%;
-  grid-gap: 0.5rem;
+  grid-template-columns: [first] 100% [line2] 0%;
+  grid-template-rows: 100% auto;
+  grid-gap: 0rem;
 }
 .cta__content .heading-secondary{
   padding-left: 30%;
