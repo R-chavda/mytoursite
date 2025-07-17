@@ -1543,12 +1543,8 @@ body {
 }
 
 .heading-tertirary {
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: right;
-  position: absolute;
-  bottom: 2rem;
-  right: 3rem;
-  width: 60%;
   z-index: 10;
 }
 
@@ -1556,6 +1552,72 @@ body {
     font-size: 1.5rem;
   }
 
+  
+.section-cta {
+  margin-top: calc(0px - var(--section-rotate));
+  padding: 3rem;
+  padding-bottom: 11rem;
+  padding-top: calc(15rem + var(--section-rotate));
+  background-color: #f7f7f7;
+}
+
+.cta {
+  position: relative;
+  max-width: 105rem;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 5% 0;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.cta__img {
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 1rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
+  box-shadow: 1rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.cta__content {
+  display: grid;
+  grid-template-columns: [first] 100% [line2] 50%;
+  grid-gap: 0.5rem;
+}
+.cta__content .heading-secondary{
+  padding-left: 30%;
+  font-size: 1.5rem
+}
+  .section-map {
+  position: relative;
+  height: 45rem;
+  margin-top: calc(0px - var(--section-rotate));
+}
+.reviews__card {
+  width: 23rem;
+  padding: 1rem;
+}
+  .reviews__card {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+  .section-reviews {
+  margin-top: calc(0px - var(--section-rotate));
+  padding: calc(1rem + var(--section-rotate)) 0;
+}
+  .reviews__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    width: 80%;
+  }
+  
   .btn,
   .btn--green,
   .btn--white,
