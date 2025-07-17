@@ -42,7 +42,7 @@ exports.getLoginForm = (req, res) => {
 
 exports.getSignupForm = (req, res) => {
     res.status(200).render('signup', {
-        title: 'Sign up for Natours',
+        title: 'Sign up for mytours',
     });
 };
 
